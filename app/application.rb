@@ -13,7 +13,8 @@ class Application
       end
     elsif req.path.match(/cart/)
     if @@cart.length == 0 
-      
+      resp.write "Empty"
+    else
     
     
     elsif req.path.match(/search/)
