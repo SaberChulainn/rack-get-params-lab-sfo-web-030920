@@ -37,5 +37,9 @@ class Application
     end
   end
   
+  def handle_add(item)
+    if @@items.include?(item)
+      @@cart << item
+      return "Added"
   
 end
