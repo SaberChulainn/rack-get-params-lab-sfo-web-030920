@@ -12,7 +12,8 @@ class Application
         resp.write "#{item}\n"
       end
     elsif req.path.match(/cart/)
-    if @@cart
+    if @@cart.length == 0 
+      
     
     
     elsif req.path.match(/search/)
